@@ -5,7 +5,8 @@
 }
 <h4>Funciários</h4>
 
-<table class="table table.houver"> @*table.houver acrescenta uma diferença estética para quando passamos o mouse em cima de um link em tela*@
+<table class="table table.houver">
+    @*table.houver acrescenta uma diferença estética para quando passamos o mouse em cima de um link em tela*@
     <thead>
         <tr>
             <th>
@@ -42,8 +43,9 @@
                     @Html.DisplayFor(modelItem => item.OfficeLocation)
                 </td>
                 <td>
-                    <a asp-action="AddOrEdit" asp-route-id="@item.EmployeeId"><i class="fa fa-marker fa-lg"></i></a> |
-                    <a asp-action="Delete" asp-route-id="@item.EmployeeId" onlyclick="return confirm('Deseja realmente deletar?')" class="text-danger ml-1"><i class="fa fa-trash-alt fa lg"></i></a>
+                    <a asp-action="AddOrEdit" asp-route-id="@item.EmployeeId"><i class="fa fa-marker fa-lg"></i></a>
+                     @*Área que exibe uma mensagem de erro ao clicar em deletar cadastro do funcionário*@
+                    <a asp-action="Delete" asp-route-id="@item.EmployeeId" onclick="return confirm('Deseja realmente deletar?')" class="text-danger ml-1"><i class="fa fa-trash-alt fa lg"></i></a> 
                 </td>
             </tr>
         }
