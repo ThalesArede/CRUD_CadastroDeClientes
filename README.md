@@ -1,2 +1,2 @@
 # CRUD_CadastroDeClientes
-CRUD_MVC desenvolvido para cadastro de clientes
+CRUD_MVC, um teste desenvolvido para cadastro de clientes e com propósito de estudos.
